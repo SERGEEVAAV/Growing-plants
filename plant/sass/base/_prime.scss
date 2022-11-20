@@ -1,0 +1,20 @@
+.prime {
+    padding-top: 62px;
+}
+.prime__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.prime__title{
+    margin: 0;
+    margin-bottom: 40px;
+
+}
+.prime__text {
+    width: 605px;
+    @include font($size: 1.25rem, $height: 1.875rem,  $weight: 400);
+    color: #636060;
+    margin: 0;
+}

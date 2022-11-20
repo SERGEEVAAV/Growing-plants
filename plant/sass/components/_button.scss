@@ -1,0 +1,8 @@
+.button_bordered {
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    padding: 12px 25px 13px 24px;
+    @include font($size: 1rem, $height: 1.25rem, $weight: 400);   
+    color: #000000;
+    margin-bottom: 126px;
+}

@@ -1,10 +1,12 @@
 .navigation {
     display: flex;
+    margin: 0;
+    padding: 0;
     
 }
 .navigation__link {
     list-style: none;
-    padding: 0 44px;
+    padding: 0 24px;
     font-family: 'Inika';
 font-style: normal;
 font-weight: 400;

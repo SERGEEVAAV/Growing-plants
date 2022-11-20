@@ -1,15 +1,19 @@
 body {
     overflow-x: hidden;
     @extend %font-prim;
-    @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
+    // @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
 }
 
 h1 {
-    @extend %font-prim;
-    @include font($size: 4.5rem, $height: 5.0rem);
+    @include font($size: 2.8125rem, $height: 3.125rem);
+    color: #717171;
+}
+h2 {
+    @extend %font-add;
+    @include font($size: 2.5rem, $height: 3.25rem, $weight: 400);
+    color: #E06733;
 }
 p {
-    @extend %font-prim;
-    @include font($size: 2.0rem, $height: 3.5rem,  $weight: 400);
+    @include font($size: 1.25rem, $height: 2.1875rem,  $weight: 400);
     color: #636060;
 }

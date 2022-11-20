@@ -1,0 +1,6 @@
+.layout-3-column {
+    display: grid;
+    grid-template-columns: repeat(3, 371px);
+    justify-content: center;
+    column-gap: 116px;
+}
