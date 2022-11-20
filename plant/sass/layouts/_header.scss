@@ -1,0 +1,23 @@
+.header {
+    margin: 0 auto;
+   
+    // padding: 50px 0px;
+}
+
+.header__wrapper {
+    background: #EDF2EC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+   
+}
+.header__logo-line {
+    display: flex;
+    align-items: center;
+   
+}
+.header__navigation {
+    display: flex;
+   
+}

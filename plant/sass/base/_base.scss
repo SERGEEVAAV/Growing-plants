@@ -1,0 +1,15 @@
+body {
+    overflow-x: hidden;
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
+}
+
+h1 {
+    @extend %font-prim;
+    @include font($size: 4.5rem, $height: 5.0rem);
+}
+p {
+    @extend %font-prim;
+    @include font($size: 2.0rem, $height: 3.5rem,  $weight: 400);
+    color: #636060;
+}

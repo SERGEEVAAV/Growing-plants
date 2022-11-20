@@ -1,0 +1,93 @@
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 100px;
+  }
+}
+p, h1, body {
+  font-family: "Inter", Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+p {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: #636060;
+}
+
+.promo {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promo__content {
+  width: 558px;
+}
+
+.colored__text {
+  color: #499A18;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  background: #EDF2EC;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__logo-line {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 44px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  /* identical to box height, or 312% */
+  color: #010201;
+}
+
+/*# sourceMappingURL=style.css.map */
