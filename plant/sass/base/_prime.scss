@@ -1,11 +1,18 @@
 .prime {
-    padding-top: 62px;
+    padding-top: 81px;
+    padding-bottom: 105px;
 }
 .prime__wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
+}
+.prime__content {
+    padding-left: 30px;
+}
+.prime__img {
+    padding-right: 29px;
 }
 .prime__title{
     margin: 0;

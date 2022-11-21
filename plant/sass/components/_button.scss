@@ -1,8 +1,36 @@
 .button_bordered {
     border: 2px solid #E06733;
     border-radius: 10px;
-    padding: 12px 25px 13px 24px;
+    padding: 12px 28px 13px 21px;
     @include font($size: 1rem, $height: 1.25rem, $weight: 400);   
     color: #000000;
+    
+}
+.button-price {
+    margin-bottom: 7px;
+}
+.button-promo {
     margin-bottom: 126px;
+}
+.button-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    background: #EDF2EC;
+    border-radius: 20px;
+    border: 1px solid #EDF2EC;
+    padding: 16px 40px;
+    @include font($size: 1.25rem, $height: 1.25rem);
+    color: #000000;
+    margin: 0;
+}
+.button-price__contact {  
+    padding: 12px 33px 12px 30px;
+    @extend %font-add;
+    @include font($size: 1.25rem, $height: 1.625rem);
+    text-align: center;
+    color: #E06733;
+    position: absolute;
+    right: 109px;
 }

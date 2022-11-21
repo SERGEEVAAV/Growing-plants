@@ -1,0 +1,49 @@
+.strategies {
+    padding: 0 109px;
+    background: $color-background;
+    padding-bottom: 63px;
+}
+.stratigies__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 35px 109px;
+}
+.strategies__title {
+    width: 306px;
+    margin: 0;
+    margin-right: 136px;
+    color: #499A18;
+   
+}
+.strategy-wrapper >* {
+  margin-bottom: 55px;
+}
+.block-bordered {
+    width: 330px;
+    border: 1px solid #E3E1D5;
+    border-radius:20px;
+}
+.strategy__name {
+    @include font($size: 1.25rem, $height: 1.25rem, $weight: 400);
+    color: #E06733;
+    text-align: center;
+    margin: 0;
+    margin: 10px 10px;
+}
+
+.strategy__description {
+    @include font($size: 1rem, $height: 1.25rem, $weight: 400);
+    color: #717171;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 36px;
+}
+.strategy {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}

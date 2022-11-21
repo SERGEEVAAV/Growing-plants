@@ -32,9 +32,9 @@
             <div class="wrapper promo__wrapper">
                 <img src="./img/promo/leafs.png" alt="leafs" width="448" height="407" class="promo__img">
                 <div class="promo__content">
-                    <h1 class="promo__title">We grow <span class="colored__text">plants</span>and give you oxygen</h1>
+                    <h1 class="promo__title">We grow <span class="colored__text">plants</span> and give you oxygen</h1>
                     <p class="promo__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <button class="button button_bordered">LEARN MORE</button>               
+                    <button class="button-promo button_bordered">LEARN MORE</button>               
                 </div>              
             </div>
         </section>
@@ -45,18 +45,20 @@
                 <h2 class="prime__title"><span class="colored__text">We are</span> professional<br> experienced <span class="colored__text">gardeners</span></h2>
                 <p class="prime__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </div>
-            <img src="./img/promo/houseplant.png" alt="houseplant">
+            <img src="./img/promo/houseplant.png" alt="houseplant" class="prime__img">
         </div>
     </section>
    <section class="strategies">
-    <div class="wrapper">
-        <h2 class="strategies__title">Service and our projects</h2>
-        <div class="stratigies__tags tags">
-            <span class="tag tag__bordered">Gargens</span>
-            <span class="tag tag__bordered">Lawn</span>
-            <span class="tag tag__bordered">Planting</span>
-        </div>
-        <div class="layout-3-column">
+    <div class="wrapper strategies__wrapper">
+        <div class="stratigies__content">
+            <h2 class="strategies__title">Service and our projects</h2>
+            <div class="stratigies__tags tags">
+                <span class="tag tag__selected">Gargens</span>
+                <span class="tag tag__bordered">Lawn</span>
+                <span class="tag tag__bordered">Planting</span>
+            </div> 
+        </div>       
+        <div class="layout-3-column strategy-wrapper">
            <article class="strategy block-bordered">
             <img src="./img/cards/1.jpg" alt="cards-1">
             <div class="strategy__content">
@@ -98,14 +100,73 @@
                 <h3 class="strategy__name">Planting</h3>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
-           </article>
-           
+           </article>           
+        </div>
+    </div>
+   </section>
+   <section class="prices">
+    <div class="wrapper prices__wrapper">
+        <div class="price-container">
+            <div class="name_container">Prices</div>
+            <div class="price-container__buttons border_container">
+               <button class="button-price">Basics
+                <span class="ico-circle">
+                    <span class="ico ico_arrow"></span>
+                </span>
+               </button>
+               <button class="button-price">Standard
+                <span class="ico-circle">
+                    <span class="ico ico_arrow"></span>
+                </span>
+               </button>
+               <button class="button-price">Pro care
+                <span class="ico-circle">
+                    <span class="ico ico_arrow"></span>
+                </span>
+               </button>
+            </div>
+        </div>
+        <div class="price-container_right">
+            <h3 class="price__title">Our best <span class="colored__text">gardeners</span> are ready to help you</h3>
+            <img src="./img/prices/leafs.png" alt="leafs" width="283" class="price-img">
+            <button class="button-price__contact button_bordered">Contact us</button>
+        </div>
+    </div>
+   </section>
+   <section class="contact-us">
+    <div class="wrapper contact-us__wrapper">
+        <!-- <div class="contact-us__content"> -->
+            <img src="./img/contact-us/contact_woman.png" alt="contact_woman" class="contact-us__img">
+            <h3 class="contact-us__title">Contact us</h3>
+            <div class="box">
+                <form>
+                  <select>
+                      <option>City</option>
+                      <option>Синий</option>
+                      <option>Розовый</option>
+                      <option>Чёрный</option>
+                      <option>Белый</option>
+                  </select>
+                </form>
+            </div>
+        <!-- </div> -->
+    </div>
+   </section>
+    <div class="footer">
+        <div class="wrapper">
+            <div class="layout-3-column footer__wrapper">
+                <h4 class="footer-title">© 2022 github</h4>
+                 <h4 class="footer-title_name">Rolling Scopes School</h4> 
+                 <span class="icons-social">
+                    <span class="ico ico_insta"></span>
+                    <span class="ico ico_facebook"></span>
+                    <span class="ico ico_twitter"></span>
+                    <span class="ico ico_pinterest"></span>
+                 </span>  
+                    
         </div>
 
     </div>
-
-   </section>
-    
 
 </body>
 </html>

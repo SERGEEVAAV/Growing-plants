@@ -1,0 +1,21 @@
+.tags {
+    display: flex;
+    cursor: pointer;
+}
+
+.tag__selected {
+    background-color: $color-selected;
+    color: #fff;
+}
+.tag {
+    width: 161px;
+    padding: 12px 0px;
+    text-align: center;
+    border: 1px solid $color-bordered;
+    border-radius: 5px;
+    @extend %font-add;
+    @include font($size: 1.25rem, $height: 1.625rem, $weight: 400);
+}
+.tags >* {
+    margin-right: 38px;
+}

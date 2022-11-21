@@ -1,0 +1,16 @@
+.footer__wrapper {
+    padding-top: 45px;
+}
+.footer-title {
+    @include font($size: 1.25rem, $height: 3.125rem, $weight: 400);
+    color: #000000;
+    margin: 0;
+    word-spacing: 14px;
+
+}
+.footer-title_name {
+    @include font($size: 1.25rem, $height: 3.125rem, $weight: 400);
+    color: #000000;
+    padding-left: 59px;
+    margin: 0;
+}
