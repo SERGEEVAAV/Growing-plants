@@ -7,6 +7,7 @@ body {
 h1 {
     @include font($size: 2.8125rem, $height: 3.125rem);
     color: #717171;
+    @include font($size: 35px, $height: 50px);    
 }
 h2 {
     @extend %font-add;

@@ -21,6 +21,10 @@ h1 {
   font-weight: 700;
   line-height: 3.125rem;
   color: #717171;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
 }
 
 h2 {
@@ -48,11 +52,21 @@ p {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .promo__wrapper {
+    justify-content: flex-start;
+  }
+}
 
 .promo__content {
   width: 558px;
   padding-top: 46px;
   padding-right: 4px;
+}
+@media (max-width: 768px) {
+  .promo__content {
+    width: 341px;
+  }
 }
 
 .promo__title {
@@ -74,6 +88,11 @@ p {
   padding-bottom: 32px;
   top: -100px;
 }
+@media (max-width: 768px) {
+  .promo__img {
+    display: none;
+  }
+}
 
 .prime {
   padding-top: 81px;
@@ -85,9 +104,19 @@ p {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .prime__wrapper {
+    flex-direction: column;
+  }
+}
 
 .prime__content {
   padding-left: 30px;
+}
+@media (max-width: 768px) {
+  .prime__content {
+    padding-left: 0;
+  }
 }
 
 .prime__img {
@@ -97,6 +126,11 @@ p {
 .prime__title {
   margin: 0;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .prime__title {
+    text-align: center;
+  }
 }
 
 .prime__text {
@@ -114,6 +148,11 @@ p {
   background: #EDF2EC;
   padding-bottom: 63px;
 }
+@media (max-width: 768px) {
+  .strategies {
+    padding: 0;
+  }
+}
 
 .stratigies__content {
   display: flex;
@@ -122,12 +161,26 @@ p {
   margin-bottom: 50px;
   padding: 35px 109px;
 }
+@media (max-width: 768px) {
+  .stratigies__content {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .strategies__title {
   width: 306px;
   margin: 0;
   margin-right: 136px;
   color: #499A18;
+}
+@media (max-width: 768px) {
+  .strategies__title {
+    margin-right: 0;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
 }
 
 .strategy-wrapper > * {
@@ -138,6 +191,11 @@ p {
   width: 330px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .block-bordered {
+    width: 281px;
+  }
 }
 
 .strategy__name {
@@ -181,6 +239,11 @@ p {
 .price-container {
   padding-left: 109px;
 }
+@media (max-width: 768px) {
+  .price-container {
+    padding-left: 0px;
+  }
+}
 
 .name_container {
   font-size: 2.5rem;
@@ -189,6 +252,14 @@ p {
   line-height: 3rem;
   color: #000000;
   margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .name_container {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+  }
 }
 
 .price-container__buttons {
@@ -214,6 +285,15 @@ p {
   margin: 0;
   margin-bottom: 35px;
 }
+@media (max-width: 768px) {
+  .price__title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    width: 296px;
+  }
+}
 
 .price-container_right {
   position: relative;
@@ -228,6 +308,12 @@ p {
 .price-img {
   padding-top: 58px;
 }
+@media (max-width: 768px) {
+  .price-img {
+    width: 152px;
+    height: 174px;
+  }
+}
 
 .contact-us {
   padding-top: 46px;
@@ -238,6 +324,14 @@ p {
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 768px) {
+  .contact-us__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
 }
 
 .contact-us__title {
@@ -252,15 +346,31 @@ p {
   padding-top: 20px;
   padding-right: 57px;
 }
+@media (max-width: 768px) {
+  .contact-us__title {
+    padding: 0;
+  }
+}
 
 .contact-us__img {
   padding-left: 106px;
+}
+@media (max-width: 768px) {
+  .contact-us__img {
+    width: 200px;
+    padding-left: 0px;
+  }
 }
 
 .box {
   position: absolute;
   right: 104px;
   padding-top: 108px;
+}
+@media (max-width: 768px) {
+  .box {
+    padding: 0;
+  }
 }
 
 .box select {
@@ -327,6 +437,12 @@ p {
 .wrapper {
   max-width: 1440px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 50px;
+  }
 }
 
 .footer__wrapper {
@@ -426,6 +542,12 @@ p {
   justify-content: center;
   align-items: center;
   column-gap: 116px;
+}
+@media (max-width: 768px) {
+  .layout-3-column {
+    grid-template-columns: repeat(2, 281px);
+    column-gap: 106px;
+  }
 }
 
 .tags {

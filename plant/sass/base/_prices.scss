@@ -8,12 +8,18 @@
 }
 .price-container {
     padding-left: 109px;
+    @include media-tablet {
+        padding-left: 0px;
+    }
 }
 .name_container {
     @include font($size: 2.5rem, $height: 3rem);
     color: #000000;
     margin-bottom: 60px;
-    
+    @include media-tablet {
+        @include font($size: 35px, $height: 42px);
+      
+    }
 }
 .price-container__buttons {
     display: flex;
@@ -33,6 +39,10 @@
     color: #000000;
     margin: 0;
     margin-bottom: 35px;
+    @include media-tablet {
+        @include font($size: 25px, $height: 35px);
+        width: 296px;
+    }
 }
 .price-container_right {
     position: relative;
@@ -45,4 +55,8 @@
 .price-img {
    
     padding-top: 58px;
+    @include media-tablet {
+        width: 152px;
+        height: 174px;
+    }
 }

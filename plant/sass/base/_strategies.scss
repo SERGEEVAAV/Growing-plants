@@ -2,6 +2,9 @@
     padding: 0 109px;
     background: $color-background;
     padding-bottom: 63px;
+    @include media-tablet {
+        padding: 0;
+    }
 }
 .stratigies__content {
     display: flex;
@@ -9,12 +12,22 @@
     align-items: center;
     margin-bottom: 50px;
     padding: 35px 109px;
+    @include media-tablet {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 .strategies__title {
     width: 306px;
     margin: 0;
     margin-right: 136px;
     color: #499A18;
+    @include media-tablet {
+        margin-right: 0;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
    
 }
 .strategy-wrapper >* {
@@ -24,6 +37,9 @@
     width: 330px;
     border: 1px solid #E3E1D5;
     border-radius:20px;
+    @include media-tablet {
+        width: 281px;
+    }
 }
 .strategy__name {
     @include font($size: 1.25rem, $height: 1.25rem, $weight: 400);

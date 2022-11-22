@@ -6,10 +6,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include media-tablet {
+        flex-direction: column;
+    }
     
 }
 .prime__content {
     padding-left: 30px;
+    @include media-tablet {
+        padding-left: 0;
+    }
 }
 .prime__img {
     padding-right: 29px;
@@ -17,7 +23,9 @@
 .prime__title{
     margin: 0;
     margin-bottom: 40px;
-
+    @include media-tablet {
+        text-align: center;
+    }
 }
 .prime__text {
     width: 605px;
