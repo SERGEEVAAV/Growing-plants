@@ -8,13 +8,17 @@
         padding: 12px 22px 8px 21px;
     }
 }
-.button-price {
-    margin-bottom: 7px;
-}
+
 .button-promo {
     margin-bottom: 126px;
     @include media-tablet {
         margin-bottom: 96px;
+    }
+    @include media-mobilessmall {
+        padding: 9px 14px;
+        border: 2px solid #E06733;
+        border-radius: 10px;
+        margin-bottom: 11px;
     }
 }
 .button-price {
@@ -29,6 +33,11 @@
     @include font($size: 1.25rem, $height: 1.25rem);
     color: #000000;
     margin: 0;
+    margin-bottom: 7px;
+    @include media-mobilessmall {
+        width: 180px;
+        padding: 13px 12px;
+    }
 }
 .button-price__contact {  
     padding: 12px 33px 12px 30px;
@@ -41,5 +50,15 @@
     @include media-tablet {
         padding: 12px 38px 12px 30px;
         right: 114px;
+    }
+    @include media-mobilessmall {
+        padding: 8px 25px 4px 23px;
+        right: 121px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
     }
 }

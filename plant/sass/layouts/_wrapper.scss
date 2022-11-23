@@ -6,5 +6,9 @@
         max-width: $tablet-width;
         padding: 0 23px;
     }
+    @include media-mobilessmall {
+        max-width: $mobile-small-width;
+        padding: 0;
+    }
     
 }

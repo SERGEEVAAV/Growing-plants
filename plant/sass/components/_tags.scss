@@ -1,6 +1,10 @@
 .tags {
     display: flex;
     cursor: pointer;
+    @include media-mobilessmall {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 }
 
 .tag__selected {
@@ -23,10 +27,22 @@
     @extend %font-add;
     @include font($size: 1.25rem, $height: 1.625rem, $weight: 400);
    
+    @include media-mobilessmall {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        width: 115px;
+        padding: 5px 0px;
+    }
 }
 .tags >* {
     margin-right: 38px;
     @include media-tablet {
         margin-right: 35px;
+    }
+    @include media-mobilessmall {
+        margin-right: 0px;
     }
 }

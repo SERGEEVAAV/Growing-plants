@@ -7,6 +7,9 @@
         padding-left: 3px;
         padding-bottom: 31px;
     }
+    @include media-mobilessmall {
+        padding-bottom: 0px;
+    }
 }
 .stratigies__content {
     display: flex;
@@ -21,6 +24,10 @@
         margin-bottom: 39px;
         padding-left: 17px;
     }
+    @include media-mobilessmall {
+        margin-bottom: 42px;
+        padding-left: 15px;
+    }
 }
 .strategies__title {
     width: 306px;
@@ -29,13 +36,22 @@
     color: #499A18;
     @include media-tablet {
         font-family: 'Inika';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 46px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
         margin-right: 0;
         margin-top: 60px;
         margin-bottom: 40px;
+    }
+    @include media-mobilessmall {
+        width: 187px;
+        margin-top: 29px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 33px;
     }
    
 }
@@ -43,6 +59,9 @@ line-height: 46px;
   margin-bottom: 55px;
   @include media-tablet {
     margin-bottom: 36px;
+  }
+  @include media-mobilessmall {
+    margin-bottom: 32px;
   }
 }
 .block-bordered {

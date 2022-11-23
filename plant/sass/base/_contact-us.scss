@@ -4,6 +4,9 @@
     @include media-tablet {
         padding-top: 40px;
     }
+    @include media-mobilessmall {
+        padding-top: 25px;
+    }
 }
 .contact-us__wrapper {
     display: flex;  
@@ -35,12 +38,26 @@
     padding: 0;
     margin-bottom: 100px;
    }
+   @include media-mobilessmall {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 86px;
+   }
 }
 .contact-us__img {
     padding-left: 106px;
     @include media-tablet {
         width: 200px;
         padding-left: 19px;
+    }
+    @include media-mobilessmall {
+        width: 100px;
+        padding-left: 104px;
+        padding-right: 111px;
     }
 }    
 .box {
@@ -50,6 +67,9 @@
     @include media-tablet {
         padding: 0;
         margin-bottom: 250px;
+    }
+    @include media-mobilessmall {
+        margin-bottom: 128px;
     }
 }
 .box select{
@@ -66,6 +86,10 @@
     @include media-tablet {
         padding: 0px;
         padding-left: 18px;
+    }
+    @include media-mobilessmall {
+        width: 300px;
+        padding-left: 15px;
     }
 }  
 //   .box::before {

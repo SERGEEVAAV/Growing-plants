@@ -8,6 +8,10 @@
         grid-template-columns: repeat(2, 281px);
         column-gap: 106px;
     }
+    @include media-mobilessmall {
+        display: flex;
+       flex-direction: column;
+    }
 }
 .layout-3-column__footer {
     display: grid;
@@ -18,5 +22,7 @@
     @include media-tablet {
        display: flex;
        flex-direction: column;
+       column-gap: 0;
     }
+
 }
