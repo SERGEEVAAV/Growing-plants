@@ -22,6 +22,9 @@
     align-items: center;
     padding-left: 139px;
     gap: 20px;
+    @include media-tablet {
+        padding: 0;
+    }
 }
 .ico_insta {
     background-image: url('../img/svg/inst.svg');

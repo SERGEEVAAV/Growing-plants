@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     padding-right: 95px;
-    
+    @include media-tablet {
+        padding-right: 0;
+    }
 }
 .navigation__link {
     list-style: none;

@@ -3,6 +3,9 @@ body {
     @extend %font-prim;
     // @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
 }
+html {
+    overflow-x: hidden;
+}
 
 h1 {
     @include font($size: 2.8125rem, $height: 3.125rem);
@@ -17,4 +20,12 @@ h2 {
 p {
     @include font($size: 1.25rem, $height: 2.1875rem,  $weight: 400);
     color: #636060;
+    @include media-tablet {
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+    }
+
 }

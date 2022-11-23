@@ -6,6 +6,13 @@
 .tag__selected {
     background-color: $color-selected;
     color: #fff;
+
+}
+.tag__bordered {
+    @include media-tablet {
+        color: #E06733;
+        
+    }
 }
 .tag {
     width: 161px;
@@ -15,7 +22,11 @@
     border-radius: 5px;
     @extend %font-add;
     @include font($size: 1.25rem, $height: 1.625rem, $weight: 400);
+   
 }
 .tags >* {
     margin-right: 38px;
+    @include media-tablet {
+        margin-right: 35px;
+    }
 }

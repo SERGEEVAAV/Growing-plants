@@ -9,3 +9,14 @@
         column-gap: 106px;
     }
 }
+.layout-3-column__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 116px;
+    @include media-tablet {
+       display: flex;
+       flex-direction: column;
+    }
+}

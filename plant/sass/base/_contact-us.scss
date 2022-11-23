@@ -1,20 +1,29 @@
 .contact-us {
     padding-top: 46px;
     background: $color-background;
+    @include media-tablet {
+        padding-top: 40px;
+    }
 }
 .contact-us__wrapper {
     display: flex;  
     justify-content: space-between;
-    position: relative;
+    // position: relative;
     @include media-tablet {
         justify-content: center;
-        flex-direction: column;
+        flex-direction:column-reverse;
         align-items: center;
-        position: static;
+        // position: static;
     }
 }
+.contact-us__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .contact-us__title {
-    position: absolute;
+    // position: absolute;
     right: 569px;
    @extend %font-add;
    @include font($size: 2.5rem, $height: 3.25rem, $weight: 400);
@@ -24,21 +33,23 @@
    padding-right: 57px;
    @include media-tablet {
     padding: 0;
+    margin-bottom: 100px;
    }
 }
 .contact-us__img {
     padding-left: 106px;
     @include media-tablet {
         width: 200px;
-        padding-left: 0px;
+        padding-left: 19px;
     }
 }    
 .box {
-    position: absolute;
+    // position: absolute;
     right: 104px;
     padding-top: 108px;
     @include media-tablet {
         padding: 0;
+        margin-bottom: 250px;
     }
 }
 .box select{
@@ -52,18 +63,22 @@
     outline: none;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include media-tablet {
+        padding: 0px;
+        padding-left: 18px;
+    }
 }  
-  .box::before {
-	content: "\f150";
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 16px;
-	height: 16px;
-    border-radius: 100%;
-	text-align: center;
-	line-height: 50px;
-	background: #AEA1A1;
-	pointer-events: none;
-    font-size: 28px;
-}
+//   .box::before {
+// 	content: "\f150";
+// 	position: absolute;
+// 	top: 0px;
+// 	right: 0px;
+// 	width: 16px;
+// 	height: 16px;
+//     border-radius: 100%;
+// 	text-align: center;
+// 	line-height: 50px;
+// 	background: #AEA1A1;
+// 	pointer-events: none;
+//     font-size: 28px;
+// }

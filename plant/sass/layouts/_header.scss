@@ -1,14 +1,13 @@
 .header {
-  
     padding: 27px 0px;
-    
+    @include media-tablet {
+        padding: 13px 0px;
+    }
 }
-
 .header__wrapper {
    
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
    
 }
 .header__logo { 
@@ -17,6 +16,9 @@
     display: flex;
     align-items: center;
     padding-left: 108px;
+    @include media-tablet {
+        padding-left: 18px;
+    }
     
 }
 .header_logo-text {
