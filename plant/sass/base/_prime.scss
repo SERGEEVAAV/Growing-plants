@@ -42,19 +42,14 @@
 .prime__title{
     margin: 0;
     margin-bottom: 40px;
-    @include media-tablet {
-        font-family: 'Inika';
-        // @extend %font-add;
-        @include font($size: 35px, $height: 46px,  $weight: 400);
+    @include media-tablet {      
         text-align: center;
         margin-bottom: 48px;
         padding-left: 20px;
     }
     @include media-mobilessmall {
-        @include font($size: 25px, $height: 33px,  $weight: 400);
-        text-align: center;
         margin-bottom: 13px;
-        padding-left: 18px;
+        padding-left: 16px;
     }
 }
 .prime__text {
@@ -69,6 +64,7 @@
     @include media-mobilessmall {
         width: 330px;
         text-align: left;
+        padding-left: 18px;
         @include font($size: 15px, $height: 25px,  $weight: 400);
     }
 }

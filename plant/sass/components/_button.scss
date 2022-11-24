@@ -10,33 +10,48 @@
 }
 
 .button-promo {
-    margin-bottom: 126px;
+    padding: 11px 24px 12px 29px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    margin-bottom: 128px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
     @include media-tablet {
-        margin-bottom: 96px;
+        padding: 9px 21px 12px 25px;
+        margin-bottom: 93px;
     }
     @include media-mobilessmall {
-        padding: 9px 14px;
+        padding: 6px 13px;
         border: 2px solid #E06733;
         border-radius: 10px;
         margin-bottom: 11px;
+        font-size: 14px;
     }
 }
 .button-price {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     gap: 54px;
     background: #EDF2EC;
     border-radius: 20px;
     border: 1px solid #EDF2EC;
-    padding: 16px 40px;
+    padding: 16px 56px 16px 33px;
     @include font($size: 1.25rem, $height: 1.25rem);
     color: #000000;
     margin: 0;
     margin-bottom: 7px;
     @include media-mobilessmall {
         width: 180px;
-        padding: 13px 12px;
+        padding: 13px 12px 13px 27px;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 20px;
     }
 }
 .button-price__contact {  
@@ -48,8 +63,8 @@
     position: absolute;
     right: 109px;
     @include media-tablet {
-        padding: 12px 38px 12px 30px;
-        right: 114px;
+        padding: 10px 38px 11px 30px;
+        right: 105px;
     }
     @include media-mobilessmall {
         padding: 8px 25px 4px 23px;

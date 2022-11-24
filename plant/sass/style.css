@@ -24,11 +24,22 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 3.125rem;
-  color: #717171;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 50px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+  }
 }
 
 h2 {
@@ -38,22 +49,28 @@ h2 {
   line-height: 3.25rem;
   color: #E06733;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+  }
+}
+@media (max-width: 380px) {
+  h2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+  }
+}
 
-p {
+h4 {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.1875rem;
-  color: #636060;
-}
-@media (max-width: 768px) {
-  p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-  }
+  line-height: 1.25rem;
 }
 
 .promo {
@@ -63,7 +80,11 @@ p {
 @media (max-width: 768px) {
   .promo {
     padding-top: 13px;
-    padding-bottom: 16px;
+  }
+}
+@media (max-width: 380px) {
+  .promo {
+    padding-bottom: 17px;
   }
 }
 
@@ -80,7 +101,6 @@ p {
 .promo__content {
   width: 558px;
   padding-top: 46px;
-  padding-right: 4px;
 }
 @media (max-width: 768px) {
   .promo__content {
@@ -98,6 +118,7 @@ p {
 .promo__title {
   margin: 0;
   margin-bottom: 47px;
+  color: #717171;
 }
 @media (max-width: 768px) {
   .promo__title {
@@ -106,11 +127,7 @@ p {
 }
 @media (max-width: 380px) {
   .promo__title {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    color: #717171;
+    width: 330px;
     margin-bottom: 23px;
   }
 }
@@ -120,20 +137,27 @@ p {
 }
 
 .promo__text {
+  width: 534px;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1875rem;
+  color: #636060;
 }
 @media (max-width: 768px) {
   .promo__text {
+    width: 341px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
     margin-bottom: 41px;
   }
 }
 @media (max-width: 380px) {
   .promo__text {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
     margin-bottom: 27px;
   }
 }
@@ -211,11 +235,6 @@ p {
 }
 @media (max-width: 768px) {
   .prime__title {
-    font-family: "Inika";
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 46px;
     text-align: center;
     margin-bottom: 48px;
     padding-left: 20px;
@@ -223,13 +242,8 @@ p {
 }
 @media (max-width: 380px) {
   .prime__title {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 33px;
-    text-align: center;
     margin-bottom: 13px;
-    padding-left: 18px;
+    padding-left: 16px;
   }
 }
 
@@ -252,6 +266,7 @@ p {
   .prime__text {
     width: 330px;
     text-align: left;
+    padding-left: 18px;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -269,10 +284,12 @@ p {
     padding: 0;
     padding-left: 3px;
     padding-bottom: 31px;
+    padding-top: 57px;
   }
 }
 @media (max-width: 380px) {
   .strategies {
+    padding-top: 28px;
     padding-bottom: 0px;
   }
 }
@@ -308,25 +325,13 @@ p {
 }
 @media (max-width: 768px) {
   .strategies__title {
-    font-family: "Inika";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 46px;
-    margin-right: 0;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    padding-bottom: 42px;
   }
 }
 @media (max-width: 380px) {
   .strategies__title {
     width: 187px;
-    margin-top: 29px;
-    font-family: "Inika";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 33px;
+    padding-bottom: 40px;
   }
 }
 
@@ -357,7 +362,8 @@ p {
 }
 
 .strategy__content {
-  padding-top: 10px;
+  padding-top: 2px;
+  padding-right: 2px;
 }
 
 @media (max-width: 768px) {
@@ -368,10 +374,6 @@ p {
 }
 
 .strategy__name {
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.25rem;
   color: #E06733;
   text-align: center;
   margin: 0;
@@ -380,6 +382,7 @@ p {
 @media (max-width: 768px) {
   .strategy__name {
     margin: 0;
+    padding-top: 7px;
   }
 }
 
@@ -398,8 +401,8 @@ p {
     width: 213px;
     margin: 0;
     text-align: left;
-    padding-left: 38px;
-    padding-top: 13px;
+    padding-left: 36px;
+    padding-top: 15px;
   }
 }
 
@@ -411,7 +414,7 @@ p {
 }
 
 .prices {
-  padding: 45px 0 11px 0;
+  padding: 42px 0 11px 0;
 }
 @media (max-width: 768px) {
   .prices {
@@ -481,7 +484,12 @@ p {
 .price-container__buttons {
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 21px;
+}
+@media (max-width: 768px) {
+  .price-container__buttons {
+    gap: 25px;
+  }
 }
 @media (max-width: 380px) {
   .price-container__buttons {
@@ -492,13 +500,13 @@ p {
 }
 
 .border_container {
-  padding: 34px 41px;
+  padding: 28px 47px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
 @media (max-width: 768px) {
   .border_container {
-    padding: 31px 45px;
+    padding: 25px 45px;
   }
 }
 @media (max-width: 380px) {
@@ -517,7 +525,7 @@ p {
   width: 452px;
   font-size: 2.5rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 3.125rem;
   text-align: right;
   color: #000000;
@@ -532,7 +540,7 @@ p {
     line-height: 35px;
     width: 296px;
     padding-top: 104px;
-    padding-left: 40px;
+    padding-left: 32px;
     text-align: center;
     margin-bottom: 29px;
   }
@@ -552,7 +560,7 @@ p {
 
 .price-container_right {
   position: relative;
-  padding-right: 116px;
+  padding-right: 108px;
   text-align: right;
 }
 
@@ -606,21 +614,25 @@ p {
 
 .contact-us__content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+@media (max-width: 768px) {
+  .contact-us__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contact-us__title {
-  right: 569px;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3.25rem;
+  padding-top: 18px;
+  padding-right: 69px;
   color: #499A18;
   margin: 0;
-  padding-top: 20px;
-  padding-right: 57px;
 }
 @media (max-width: 768px) {
   .contact-us__title {
@@ -658,8 +670,8 @@ p {
 }
 
 .box {
-  right: 104px;
-  padding-top: 108px;
+  padding-right: 108px;
+  padding-top: 105px;
 }
 @media (max-width: 768px) {
   .box {
@@ -860,31 +872,40 @@ p {
 }
 
 .button-promo {
-  margin-bottom: 126px;
+  padding: 11px 24px 12px 29px;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  margin-bottom: 128px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .button-promo {
-    margin-bottom: 96px;
+    padding: 9px 21px 12px 25px;
+    margin-bottom: 93px;
   }
 }
 @media (max-width: 380px) {
   .button-promo {
-    padding: 9px 14px;
+    padding: 6px 13px;
     border: 2px solid #E06733;
     border-radius: 10px;
     margin-bottom: 11px;
+    font-size: 14px;
   }
 }
 
 .button-price {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 54px;
   background: #EDF2EC;
   border-radius: 20px;
   border: 1px solid #EDF2EC;
-  padding: 16px 40px;
+  padding: 16px 56px 16px 33px;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
@@ -896,7 +917,12 @@ p {
 @media (max-width: 380px) {
   .button-price {
     width: 180px;
-    padding: 13px 12px;
+    padding: 13px 12px 13px 27px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 
@@ -913,8 +939,8 @@ p {
 }
 @media (max-width: 768px) {
   .button-price__contact {
-    padding: 12px 38px 12px 30px;
-    right: 114px;
+    padding: 10px 38px 11px 30px;
+    right: 105px;
   }
 }
 @media (max-width: 380px) {

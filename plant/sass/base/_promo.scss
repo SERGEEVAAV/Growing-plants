@@ -3,7 +3,10 @@
     overflow: hidden;
   @include media-tablet {
     padding-top: 13px;
-    padding-bottom: 16px;
+    // padding-bottom: 16px;
+  }
+  @include media-mobilessmall {
+    padding-bottom: 17px;
   }
 }
 .promo__wrapper {
@@ -17,7 +20,7 @@
 .promo__content {
     width: 558px;
     padding-top: 46px;
-    padding-right: 4px;
+    // padding-right: 6px;
     @include media-tablet {
         width: 341px;
         padding-left: 25px;
@@ -30,12 +33,12 @@
 .promo__title {
     margin: 0;
     margin-bottom: 47px;
+    color: #717171;
     @include media-tablet {
         margin-bottom: 32px;
     }
-    @include media-mobilessmall {
-        @include font($size: 25px, $height: 35px, $weight: 400);
-        color: #717171;
+    @include media-mobilessmall { 
+        width: 330px;            
         margin-bottom: 23px;
     }
 }
@@ -43,15 +46,19 @@
     color:#499A18;
 }
 .promo__text {
+    width: 534px;
     margin: 0;
-    margin-bottom: 43px;
-@include media-tablet {
-    margin-bottom: 41px;
-}
-@include media-mobilessmall {
-    @include font($size: 16px, $height: 25px, $weight: 400);
-        margin-bottom: 27px;
-}
+    margin-bottom: 45px;
+    @include font($size: 1.25rem, $height: 2.1875rem,  $weight: 400);
+    color: #636060;
+        @include media-tablet {
+            width: 341px;
+            @include font($size: 16px, $height: 25px,  $weight: 400);
+            margin-bottom: 41px;
+        }
+        @include media-mobilessmall {
+                margin-bottom: 27px;
+        }
 }
 .promo__img {
     padding-left: 4px;

@@ -9,23 +9,26 @@ html {
 
 h1 {
     @include font($size: 2.8125rem, $height: 3.125rem);
-    color: #717171;
-    @include font($size: 35px, $height: 50px);    
+    @include media-tablet {
+        @include font($size: 35px, $height: 50px); 
+    }
+    
+    @include media-mobilessmall {
+        @include font($size: 25px, $height: 35px, $weight: 400);
+    }
 }
 h2 {
     @extend %font-add;
     @include font($size: 2.5rem, $height: 3.25rem, $weight: 400);
     color: #E06733;
-}
-p {
-    @include font($size: 1.25rem, $height: 2.1875rem,  $weight: 400);
-    color: #636060;
     @include media-tablet {
-        font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 25px;
+        @include font($size: 35px, $height: 46px,  $weight: 400);
     }
+    @include media-mobilessmall {
+        @include font($size: 25px, $height: 33px,  $weight: 400);
+    }
+}
 
+h4 {
+    @include font($size: 1.25rem, $height: 1.25rem, $weight: 400);
 }

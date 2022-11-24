@@ -21,32 +21,34 @@
 }
 .contact-us__content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include media-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 .contact-us__title {
-    // position: absolute;
-    right: 569px;
-   @extend %font-add;
-   @include font($size: 2.5rem, $height: 3.25rem, $weight: 400);
-   color: #499A18;
-   margin: 0;
-   padding-top: 20px;
-   padding-right: 57px;
-   @include media-tablet {
-    padding: 0;
-    margin-bottom: 100px;
-   }
-   @include media-mobilessmall {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 33px;
-    text-align: center;
-    margin-bottom: 86px;
-   }
+    @extend %font-add;
+    @include font($size: 2.5rem, $height: 3.25rem, $weight: 400);
+    padding-top: 18px;
+    padding-right: 69px;  
+    color: #499A18;
+    margin: 0;
+        @include media-tablet {
+            padding: 0;
+            margin-bottom: 100px;
+        }
+        @include media-mobilessmall {
+            font-family: 'Inika';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 33px;
+            text-align: center;
+            margin-bottom: 86px;
+        }
 }
 .contact-us__img {
     padding-left: 106px;
@@ -62,8 +64,8 @@
 }    
 .box {
     // position: absolute;
-    right: 104px;
-    padding-top: 108px;
+    padding-right: 108px;
+    padding-top: 105px;
     @include media-tablet {
         padding: 0;
         margin-bottom: 250px;

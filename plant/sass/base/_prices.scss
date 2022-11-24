@@ -1,5 +1,5 @@
 .prices {
-    padding: 45px 0 11px 0;
+    padding: 42px 0 11px 0;
     @include media-tablet {
         padding: 42px 0 72px 0;
     }
@@ -44,7 +44,11 @@
 .price-container__buttons {
     display: flex;
     flex-direction: column;
-    gap: 29px;
+    gap: 21px;
+    @include media-tablet {
+        gap: 25px;
+    }
+    
     @include media-mobilessmall {
         justify-content: center;
         align-items: center;
@@ -52,11 +56,11 @@
     }
 }
 .border_container {
-    padding: 34px 41px;
+    padding: 28px 47px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     @include media-tablet {
-        padding: 31px 45px;
+        padding: 25px 45px;
     }
     @include media-mobilessmall {
         width: 224px;
@@ -71,7 +75,7 @@
 }
 .price__title{
     width: 452px;
-    @include font($size: 2.5rem, $height: 3.125rem, $weight: 400);
+    @include font($size: 2.5rem, $height: 3.125rem);
     text-align: right;
     color: #000000;
     margin: 0;
@@ -80,7 +84,7 @@
         @include font($size: 25px, $height: 35px);
         width: 296px;
         padding-top: 104px;
-        padding-left: 40px;
+        padding-left: 32px;
         text-align: center;
         margin-bottom: 29px;
     }
@@ -94,7 +98,7 @@
 }
 .price-container_right {
     position: relative;
-    padding-right: 116px;
+    padding-right: 108px;
     text-align: right;
 }
 .price-container_right:nth-child(3) {
