@@ -1,0 +1,109 @@
+.strategies {
+    padding: 0 109px;
+    background: $color-background;
+    padding-bottom: 63px;
+    @include media-tablet {
+        padding: 0;
+        padding-left: 3px;
+        padding-bottom: 31px;
+        padding-top: 57px;
+    }
+    @include media-mobile {
+        padding-top: 28px;
+        padding-bottom: 0px;
+    }
+}
+.stratigies__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 35px 109px;
+    @include media-tablet {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 39px;
+        padding-left: 17px;
+    }
+    @include media-mobile {
+        margin-bottom: 42px;
+        padding-left: 15px;
+    }
+}
+.strategies__title {
+    width: 306px;
+    margin: 0;
+    margin-right: 136px;
+    color: #499A18;
+   @include media-tablet {
+    padding-bottom: 42px;
+   }
+   @include media-mobile {
+    width: 187px;
+    padding-bottom: 40px;
+   }
+}
+.strategy-wrapper >* {
+  margin-bottom: 55px;
+  @include media-tablet {
+    margin-bottom: 36px;
+  }
+  @include media-mobile {
+    margin-bottom: 32px;
+  }
+}
+.block-bordered {
+    width: 330px;
+    border: 1px solid #E3E1D5;
+    border-radius:20px;
+    @include media-tablet {
+        width: 280px;
+        height: 450px;
+       
+    }
+}
+.strategy__content {
+    padding-top: 2px;
+    padding-right: 2px;
+}
+.strategy__img {
+    @include media-tablet {
+        width: 280px;
+        height: 350px;
+    }
+}
+
+.strategy__name {
+    color: #E06733;
+    text-align: center;
+    margin: 0;
+    margin: 10px 10px;
+    @include media-tablet {
+        margin: 0;
+        padding-top: 7px;
+        
+    }
+}
+
+.strategy__description {
+    @include font($size: 1rem, $height: 1.25rem, $weight: 400);
+    color: #717171;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 36px;
+    @include media-tablet {
+        width: 213px;
+        margin: 0;
+        text-align: left;
+        padding-left: 36px;
+        padding-top: 15px;
+    }
+}
+.strategy {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}

@@ -1,0 +1,28 @@
+.layout-3-column {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 116px;
+    @include media-tablet {
+        grid-template-columns: repeat(2, 281px);
+        column-gap: 106px;
+    }
+    @include media-mobile {
+        display: flex;
+       flex-direction: column;
+    }
+}
+.layout-3-column__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 116px;
+    @include media-tablet {
+       display: flex;
+       flex-direction: column;
+       column-gap: 0;
+    }
+
+}

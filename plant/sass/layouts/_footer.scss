@@ -1,0 +1,30 @@
+.footer__wrapper {
+    padding-top: 45px;
+    @include media-tablet {
+        padding-top: 13px;
+    }
+    @include media-mobile {
+        padding-top: 9px;
+    }
+}
+.footer-title {
+    @include font($size: 1.25rem, $height: 3.125rem, $weight: 400);
+    color: #000000;
+    margin: 0;
+    word-spacing: 14px;
+    @include media-tablet {
+        word-spacing: 16px;
+    }
+   
+
+}
+.footer-title_name {
+    @include font($size: 1.25rem, $height: 3.125rem, $weight: 400);
+    color: #000000;
+    padding-left: 59px;
+    margin: 0;
+    @include media-tablet {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}

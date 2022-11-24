@@ -1,0 +1,34 @@
+body {
+    overflow-x: hidden;
+    @extend %font-prim;
+    // @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
+}
+html {
+    overflow-x: hidden;
+}
+
+h1 {
+    @include font($size: 2.8125rem, $height: 3.125rem);
+    @include media-tablet {
+        @include font($size: 35px, $height: 50px); 
+    }
+    
+    @include media-mobile {
+        @include font($size: 25px, $height: 35px, $weight: 400);
+    }
+}
+h2 {
+    @extend %font-add;
+    @include font($size: 2.5rem, $height: 3.25rem, $weight: 400);
+    color: #E06733;
+    @include media-tablet {
+        @include font($size: 35px, $height: 46px,  $weight: 400);
+    }
+    @include media-mobile {
+        @include font($size: 25px, $height: 33px,  $weight: 400);
+    }
+}
+
+h4 {
+    @include font($size: 1.25rem, $height: 1.25rem, $weight: 400);
+}
