@@ -8,7 +8,7 @@
         grid-template-columns: repeat(2, 281px);
         column-gap: 106px;
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         display: flex;
        flex-direction: column;
     }

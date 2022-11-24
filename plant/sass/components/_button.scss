@@ -1,3 +1,12 @@
+button {
+    &:hover {
+        background-color: #E06733;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+}
+
 .button_bordered {
     border: 1px solid #E06733;
     border-radius: 5px;
@@ -23,7 +32,7 @@ line-height: 20px;
         padding: 9px 21px 12px 25px;
         margin-bottom: 93px;
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         padding: 6px 13px;
         border: 2px solid #E06733;
         border-radius: 10px;
@@ -44,7 +53,7 @@ line-height: 20px;
     color: #000000;
     margin: 0;
     margin-bottom: 7px;
-    @include media-mobilessmall {
+    @include media-mobile {
         width: 180px;
         padding: 13px 12px 13px 27px;
         font-family: 'Inter';
@@ -66,7 +75,7 @@ line-height: 20px;
         padding: 10px 38px 11px 30px;
         right: 105px;
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         padding: 8px 25px 4px 23px;
         right: 121px;
         font-family: 'Inika';

@@ -8,7 +8,7 @@
         padding-bottom: 31px;
         padding-top: 57px;
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         padding-top: 28px;
         padding-bottom: 0px;
     }
@@ -26,7 +26,7 @@
         margin-bottom: 39px;
         padding-left: 17px;
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         margin-bottom: 42px;
         padding-left: 15px;
     }
@@ -39,7 +39,7 @@
    @include media-tablet {
     padding-bottom: 42px;
    }
-   @include media-mobilessmall {
+   @include media-mobile {
     width: 187px;
     padding-bottom: 40px;
    }
@@ -49,7 +49,7 @@
   @include media-tablet {
     margin-bottom: 36px;
   }
-  @include media-mobilessmall {
+  @include media-mobile {
     margin-bottom: 32px;
   }
 }

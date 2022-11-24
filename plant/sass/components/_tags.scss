@@ -1,7 +1,7 @@
 .tags {
     display: flex;
     cursor: pointer;
-    @include media-mobilessmall {
+    @include media-mobile {
         flex-wrap: wrap;
         gap: 12px;
     }
@@ -27,7 +27,7 @@
     @extend %font-add;
     @include font($size: 1.25rem, $height: 1.625rem, $weight: 400);
    
-    @include media-mobilessmall {
+    @include media-mobile {
         font-family: 'Inika';
         font-style: normal;
         font-weight: 400;
@@ -36,13 +36,19 @@
         width: 115px;
         padding: 5px 0px;
     }
+    &:hover {
+        background-color: #E06733;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
 }
 .tags >* {
     margin-right: 38px;
     @include media-tablet {
         margin-right: 35px;
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         margin-right: 0px;
     }
 }

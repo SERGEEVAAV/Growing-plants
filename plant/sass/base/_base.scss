@@ -13,7 +13,7 @@ h1 {
         @include font($size: 35px, $height: 50px); 
     }
     
-    @include media-mobilessmall {
+    @include media-mobile {
         @include font($size: 25px, $height: 35px, $weight: 400);
     }
 }
@@ -24,7 +24,7 @@ h2 {
     @include media-tablet {
         @include font($size: 35px, $height: 46px,  $weight: 400);
     }
-    @include media-mobilessmall {
+    @include media-mobile {
         @include font($size: 25px, $height: 33px,  $weight: 400);
     }
 }
