@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plant</title>
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="src/sass/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -57,7 +57,8 @@
         <div class="stratigies__content">
             <h2 class="strategies__title">Service and our projects</h2>
             <div class="stratigies__tags tags">
-                <span class="tag tag__selected">Gargens</span>
+                <span class="tag tag__selected">All</span>
+                <span class="tag tag__bordered">Gargens</span>
                 <span class="tag tag__bordered">Lawn</span>
                 <span class="tag tag__bordered">Planting</span>
             </div> 
@@ -66,42 +67,45 @@
            <article class="strategy block-bordered">
             <img src="./img/cards/1.jpg" alt="cards-1" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Garden care</h4>
+                <span class="strategy__hidden name">Gargens</span>
+                <h4 class="strategy__name name">Garden care</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
            <article class="strategy block-bordered">
             <img src="./img/cards/2.jpg" alt="cards-2" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Planting</h4>
+                <h4 class="strategy__name name">Planting</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
            <article class="strategy block-bordered">
             <img src="./img/cards/3.jpg" alt="cards-3" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Lawn care</h4>
+                <span class="strategy__hidden name">Lawn</span>
+                <h4 class="strategy__name name">Lawn care</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
            <article class="strategy block-bordered">
             <img src="./img/cards/4.jpg" alt="cards-4" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Planting</h4>
+                <h4 class="strategy__name name">Planting</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
            <article class="strategy block-bordered">
             <img src="./img/cards/5.jpg" alt="cards-5" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Garden care</h4>
+                <span class="strategy__hidden name">Gargens</span>
+                <h4 class="strategy__name name">Garden care</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
            <article class="strategy block-bordered">
             <img src="./img/cards/6.jpg" alt="cards-6" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Planting</h4>
+                <h4 class="strategy__name name">Planting</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>           
@@ -143,7 +147,7 @@
             <div class="contact-us__content">
                 <h3 class="contact-us__title">Contact us</h3>
                     <form>
-                        <div class="contact-us__select" data-state="">
+                        <div class="contact-us__select selected__wrapper" data-state="">
                             <div class="contact-us__select__title">City</div>
                             <div class="contact-us__select__content">
                                 <input id="singleSelect0" type="radio" class="contact-us__select__input" name="singleSelect"/>
@@ -182,7 +186,7 @@
         </div>
 
     </div>
-    <script src="./index.js"></script>
+    <script src="./dist/main.js"></script>
 </body>
 
 </html>

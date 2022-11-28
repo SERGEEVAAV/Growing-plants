@@ -1,0 +1,34 @@
+// .modal {
+//   width: 448px;
+//   height: 214px;
+//   background: #EDF2EC;
+//   border: 1px solid #000000;
+//   border-radius: 20px;
+// }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  background-color: $color-heading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal {
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 675px;
+  min-height: 120px;
+  max-height: 90%;
+  overflow: auto;
+  // @extend %custom-scroll;
+
+  // @include media-tablet {
+  //     width: 90%;
+  // }
+}
