@@ -2,7 +2,7 @@
     display: inline-block;
 }
 .ico_arrow {
-    background-image: url('../img/svg/arrow.svg');
+    background-image: url('../../../img/svg/arrow.svg');
     width: 6px;
     height: 4px;
 }
@@ -22,27 +22,28 @@
     align-items: center;
     padding-left: 139px;
     gap: 20px;
+    cursor: pointer;
     @include media-tablet {
         padding: 0;
     }
 }
 .ico_insta {
-    background-image: url('../img/svg/inst.svg');
+    background-image: url('../../../img/svg/inst.svg');
     width: 32px;
     height: 32px;
 }
 .ico_facebook {
-    background-image: url('../img/svg/fb.svg');
+    background-image: url('../../../img/svg/fb.svg');
     width: 32px;
     height: 32px;
 }
 .ico_twitter {
-    background-image: url('../img/svg/tw.svg');
+    background-image: url('../../../img/svg/tw.svg');
     width: 32px;
     height: 32px;
 }
 .ico_pinterest {
-    background-image: url('../img/svg/pinterest.svg');
+    background-image: url('../../../img/svg/pinterest.svg');
     width: 32px;
     height: 32px;
 }

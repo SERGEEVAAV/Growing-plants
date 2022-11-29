@@ -416,7 +416,7 @@ h4 {
   display: none;
 }
 
-.strategy__hidden {
+.strategy__header {
   display: none;
 }
 
@@ -439,6 +439,7 @@ h4 {
   margin-bottom: 10px;
 }
 .article-modal__content .strategy__text {
+  text-align: left;
   margin: 0 0 12px;
 }
 
@@ -863,16 +864,25 @@ h4 {
 }
 
 .modal__close-icon {
-  background-image: url("../img/svg/close-ico.svg");
+  background-image: url("../../../img/svg/close-ico.svg");
   width: 21px;
   height: 22px;
   position: absolute;
+  z-index: 10;
   top: 30px;
   right: 26px;
   cursor: pointer;
 }
 .modal__close-icon svg {
   pointer-events: none;
+}
+
+.article-modal__content {
+  padding: 20px;
+}
+
+.strategy__text {
+  text-align: center;
 }
 
 .header {
@@ -1269,7 +1279,7 @@ button:hover {
 }
 
 .ico_arrow {
-  background-image: url("../img/svg/arrow.svg");
+  background-image: url("../../../img/svg/arrow.svg");
   width: 6px;
   height: 4px;
 }
@@ -1291,6 +1301,7 @@ button:hover {
   align-items: center;
   padding-left: 139px;
   gap: 20px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .icons-social {
@@ -1299,25 +1310,25 @@ button:hover {
 }
 
 .ico_insta {
-  background-image: url("../img/svg/inst.svg");
+  background-image: url("../../../img/svg/inst.svg");
   width: 32px;
   height: 32px;
 }
 
 .ico_facebook {
-  background-image: url("../img/svg/fb.svg");
+  background-image: url("../../../img/svg/fb.svg");
   width: 32px;
   height: 32px;
 }
 
 .ico_twitter {
-  background-image: url("../img/svg/tw.svg");
+  background-image: url("../../../img/svg/tw.svg");
   width: 32px;
   height: 32px;
 }
 
 .ico_pinterest {
-  background-image: url("../img/svg/pinterest.svg");
+  background-image: url("../../../img/svg/pinterest.svg");
   width: 32px;
   height: 32px;
 }

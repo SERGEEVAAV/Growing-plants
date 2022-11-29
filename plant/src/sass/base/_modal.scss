@@ -34,14 +34,22 @@
 }
 
 .modal__close-icon {
-  background-image: url("../img/svg/close-ico.svg");
+  background-image: url("../../../img/svg/close-ico.svg");
   width: 21px;
   height: 22px;
   position: absolute;
+  z-index: 10;
   top: 30px;
   right: 26px;
   cursor: pointer;
   svg {
       pointer-events: none;
   }
+}
+
+.article-modal__content {
+  padding: 20px;
+}
+.strategy__text {
+  text-align: center;
 }

@@ -110,7 +110,7 @@
     }
     
 }
-.strategy__hidden {
+.strategy__header {
     display: none;
 }
 
@@ -130,6 +130,7 @@
     }
 
     .strategy__text {
+        text-align: left;
         margin: 0 0 12px;
     }
 }

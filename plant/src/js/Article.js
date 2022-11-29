@@ -1,7 +1,8 @@
 export class Article {
-    constructor({ id, title, urlToImage, paragraph, ...rest }) {
+    constructor({ id, title, subtitle, urlToImage, paragraph, ...rest }) {
         this.id = id;
         this.title = title;
+        this.subtitle = subtitle;
         this.urlToImage = urlToImage;
         this.paragraph = paragraph;
         
@@ -17,11 +18,15 @@ export class Article {
         this.urlToImage &&
         (template += `<img class="strategy__image" src=${this.urlToImage} alt="strategy">`)
 
-        if (this.title || this.paragraph) {
+        if (this.title  ||this.subtitle || this.paragraph) {
             template += `<div class="strategy__content">`
+
+            this.subtitle &&
+            (template += `<h3 class="strategy__header">${this.subtitle}</h3>`)
 
             this.title &&
            (template += `<h3 class="strategy__name">${this.title}</h3>`)
+
 
            this.paragraph &&
            (template += `<p class="strategy__text">${this.paragraph}</p>`)
