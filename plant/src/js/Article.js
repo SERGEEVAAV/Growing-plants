@@ -1,34 +1,37 @@
 export class Article {
-    constructor({id, city, phone, adress, tags, ...rest}) {
+    constructor({ id, title, urlToImage, paragraph, ...rest }) {
         this.id = id;
-        this.city = city;
-        this.phone = phone;
-        this.adress = adress;
-        this.tags = tags;
+        this.title = title;
+        this.urlToImage = urlToImage;
+        this.paragraph = paragraph;
+        
     }
 
-    //Article generator
+    //Article generatot
     generateArticle() {
         let template = '';
         let article = document.createElement('article');
-        article.className = 'contact-us__select__label';
+        article.className = 'strategy block-shadowed';
         article.setAttribute('data-id', this.id);
 
-        this.city &&
-        (template += `<h4 class="popup__city">${this.city}</h4>`);
+        this.urlToImage &&
+        (template += `<img class="strategy__image" src=${this.urlToImage} alt="strategy">`)
 
-        this.phone &&
-        (template += `h4 class="popup__phone">${this.phone}</h4>`);
+        if (this.title || this.paragraph) {
+            template += `<div class="strategy__content">`
 
-        this.adress &&
-        (template += `h4 class="popup__adress">${this.adress}</h4>`);
+            this.title &&
+           (template += `<h3 class="strategy__name">${this.title}</h3>`)
 
-        this.tags &&
-        (template += `div class="popup__tags">${this.tags}</div>`);
+           this.paragraph &&
+           (template += `<p class="strategy__text">${this.paragraph}</p>`)
+
+           
+  
+            template += `</div>`
+        }
 
         article.innerHTML = template;
-        console.log(article);
-        // console.log(article.innerHTML);
         return article;
     }
 }

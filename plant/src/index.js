@@ -1,34 +1,62 @@
 import { Article } from "./js/Article";
+import { ArticleModal } from "./js/ArticleModal";
 import { Modal } from "./js/Modal";
 const data = [
   {
     id: 1,
-    city: 'City: Canandaigua, NY',
-    phone: 'Phone: +1	585	393 0001',
-    adress: 'Office adress: 151 Charlotte Street',
-    tags: ['Call us']
+    title: 'Garden care',
+    paragraph: 'Lorem Ipsum has been the industry',
+    urlToImage: './img/cards/1.jpg',
+    tags: ['Art', 'Design'],
+    content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+    data: '01.01.2022'
   },
   {
     id: 2,
-    city: 'City: New York City',
-    phone: 'Phone: +1	212	456 0002',
-    adress: 'Office adress: 9 East 91st Street',
-    tags: ['Call us']
+         title: 'Planting',
+         paragraph: 'Lorem Ipsum has been the industry',
+         urlToImage: './img/cards/2.jpg',
+         tags: ['Art', 'Design'],
+         content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+         data: '01.01.2022'
   },
   {
     id: 3,
-    city: 'City: Yonkers, NY',
-    phone: 'Phone: +1	914	678 0003',
-    adress: 'Office adress: 511 Warburton Ave',
-    tags: ['Call us']
+         title: 'Lawn care',
+         paragraph: 'Lorem Ipsum has been the industry',
+         urlToImage: './img/cards/3.jpg',
+         tags: ['Art', 'Design'],
+         content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+         data: '01.01.2022'
   },
   {
     id: 4,
-    city: 'City: Sherrill, NY',
-    phone: 'Phone: +1	315	908 0004',
-    adress: 'Office adress: 14 WEST Noyes BLVD',
-    tags: ['Call us']
-  }
+         title: 'Planting',
+         paragraph: 'Lorem Ipsum has been the industry',
+         urlToImage: './img/cards/4.jpg',
+         tags: ['Art', 'Design'],
+         content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+         data: '01.01.2022'
+  },
+  {
+    id: 5,
+    title: 'Garden care',
+    paragraph: 'Lorem Ipsum has been the industry',
+    urlToImage: './img/cards/5.jpg',
+    tags: ['Art', 'Design'],
+    content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+    data: '01.01.2022'
+  },
+  {
+    id: 6,
+    title: 'Planting',
+    paragraph: 'Lorem Ipsum has been the industry',
+    urlToImage: './img/cards/6.jpg',
+    tags: ['Art', 'Design'],
+    content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+    data: '01.01.2022'
+  },
+
 ]
 
 
@@ -36,9 +64,9 @@ window.onload = function() {
  console.log('Hello!!!');
 
 //Render Articles
-// if(data) {
-//   renderArticlesToDom();
-// }
+if(data) {
+  renderArticlesToDom();
+}
 
   //tags
   addTagsClickHandler();
@@ -48,7 +76,7 @@ window.onload = function() {
 }
 
 const addTagsClickHandler = () => {
-  document.querySelector('.stratigies__tags').addEventListener('click', (e) => {
+  document.querySelector('.strategies__tags').addEventListener('click', (e) => {
     if(e.target.classList.contains('tag')) {
       let clickedTag = e.target;
       removeSelectedTags();
@@ -85,18 +113,40 @@ const showAllStrategies = () => {
 }
 
 
-const filterStrategyBySelectedTag = (selectedTag) => {
+const filterStrategyBySelectedTag = (selectedName) => {
   let strategies = document.querySelectorAll('.strategy-wrapper .strategy');
   strategies.forEach(strategy => {
     strategy.classList.add('strategy_hidden');
     strategy.querySelectorAll('.name').forEach(name => {
-      if(name.innerText === selectedTag) {
+      if(name.innerText === selectedName) {
         strategy.classList.remove('strategy_hidden');
       }
     })
   })
 }
 
+const renderArticlesToDom = () => {
+  let strategiesWrapper = getStrategiesWrapper();
+  generateArticles(data).forEach(article => {
+    strategiesWrapper.append(article.generateArticle());
+  })
+  addStrategyClickHandler();
+}
+
+const getStrategiesWrapper = () => {
+  const strategiesConstainer = document.querySelector('.strategy-wrapper');
+  strategiesConstainer.innerHTML = '';
+  return  strategiesConstainer
+}
+
+const generateArticles = (data) => {
+  let articles = [];
+  data.forEach(article => {
+    articles.push(new Article(article))
+  });
+ 
+  return articles;
+}
 
 const addToolsClickHandler = () => {
   document.querySelector('.button-price__contact').addEventListener('click', () => {
@@ -114,27 +164,34 @@ const renderModalWindow = (content) => {
 }
 
 
-// const renderArticlesToDom = () => {
-//   let selectedWrapper = getSelectedWrapper();
-//   generateArticles(data).forEach(article => {
-//     selectedWrapper.append(article.generateArticle());
-//   });
-// }
 
-// const getSelectedWrapper = () => {
-//   const selectedContainer = document.querySelector('.selected__wrapper');
-//   selectedContainer.innerHTML = '';
-//   return  selectedContainer
-// }
 
-// const generateArticles = (data) => {
-//   let articles = [];
-//   data.forEach(article => {
-//     articles.push(new Article(article))
-//   });
- 
-//   return articles;
-// }
+const addStrategyClickHandler = () => {
+  document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+    if(e.target.closest('.strategy')) {
+      let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');    
+      let clickedStrategyData = getClickedData(clickedStrategyId);
+
+      renderArticleModalWindow(clickedStrategyData);
+    }
+    
+  })
+}
+
+const getClickedData = (id) => {
+  return data.find(article => article.id == id)
+}
+
+const renderArticleModalWindow = (article) => {
+  let modal = new ArticleModal ('article-modal', article);
+  modal.renderModal();
+}
+
+
+
+
+
+
 
 
 

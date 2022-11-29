@@ -420,6 +420,28 @@ h4 {
   display: none;
 }
 
+.article-modal__content .strategy__image {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .article-modal__content .strategy__image {
+    position: static;
+  }
+}
+.article-modal__content .strategy__data {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3rem;
+  margin: 0 0 5px;
+}
+.article-modal__content .strategy__name {
+  margin-bottom: 10px;
+}
+.article-modal__content .strategy__text {
+  margin: 0 0 12px;
+}
+
 .prices {
   padding: 42px 0 11px 0;
 }
@@ -822,9 +844,9 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%;
-  height: 20%;
-  background-color: #717171;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -838,6 +860,19 @@ h4 {
   min-height: 120px;
   max-height: 90%;
   overflow: auto;
+}
+
+.modal__close-icon {
+  background-image: url("../img/svg/close-ico.svg");
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  cursor: pointer;
+}
+.modal__close-icon svg {
+  pointer-events: none;
 }
 
 .header {

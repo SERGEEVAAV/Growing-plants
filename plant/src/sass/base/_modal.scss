@@ -9,9 +9,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%;
-  height: 20%;
-  background-color: $color-heading;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,4 +31,17 @@
   // @include media-tablet {
   //     width: 90%;
   // }
+}
+
+.modal__close-icon {
+  background-image: url("../img/svg/close-ico.svg");
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  cursor: pointer;
+  svg {
+      pointer-events: none;
+  }
 }
