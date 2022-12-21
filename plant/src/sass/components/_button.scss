@@ -1,7 +1,7 @@
 button {
     &:hover {
-        background-color: #E06733;
-        color: #fff;
+        // background-color: #E06733;
+        // color: #fff;
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
@@ -42,8 +42,7 @@ line-height: 20px;
 }
 .button-price {
     display: flex;
-    // justify-content: center;
-    align-items: center;
+    // align-items: center;
     gap: 54px;
     background: #EDF2EC;
     border-radius: 20px;
@@ -53,16 +52,25 @@ line-height: 20px;
     color: #000000;
     margin: 0;
     margin-bottom: 7px;
+       
     @include media-mobile {
         width: 180px;
         padding: 13px 12px 13px 27px;
         font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
     }
+    &.opened {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 16px 40px 0 40px;
+        background: #D6E7D2;         
 }
+}
+
 .button-price__contact {  
     padding: 12px 33px 12px 30px;
     @extend %font-add;

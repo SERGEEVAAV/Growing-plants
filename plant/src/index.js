@@ -1,35 +1,37 @@
 import { Article } from "./js/Article";
+import { Price } from "./js/Price";
 import { ArticleModal } from "./js/ArticleModal";
 import { Modal } from "./js/Modal";
-import { PriceModal } from "./js/PriceModal";
+
 
 const price = [
   {
     id: 1,
-    title: 'Standard',
+    // title: 'Standard',
     paragraph: 'Release of Letraset sheets containing Lorem Ipsum passages, and more recently',
     tags: ['Order'],
-    content: '$25 / per hour',
-    data: '29.11.2022'
+    value: '$25 / per hour',
+   
   },
   {
     id: 2,
-    title: 'Basics',
+    // title: 'Basics',
     paragraph: 'Release of Letraset sheets containing Lorem Ipsum passages, and more recently',
     tags: ['Order'],
-    content: '$15 / per hour',
-    data: '29.11.2022'
+    value: '$15 / per hour',
+    
   },
   {
     id: 3,
-    title: 'Pro care',
+    // title: 'Pro care',
     paragraph: 'Release of Letraset sheets containing Lorem Ipsum passages, and more recently',
     tags: ['Order'],
-    content: '$35 / per hour',
-    data: '29.11.2022'
+    value: '$35 / per hour',
+    
   }
+  
 ]
-
+console.log(price);
 const data = [
   {
     id: 1,
@@ -98,15 +100,16 @@ const data = [
 window.onload = function() {
  console.log('Hello!!!');
 
- //Render PriceModal
- if(price) {
-  renderPriceModalToDom();
- }
 
 //Render Articles
 if(data) {
   renderArticlesToDom();
 }
+
+//Render PriceModal
+// if(price) {
+//   renderPriceToDom();
+//  }
 
   //tags
   addTagsClickHandler();
@@ -224,11 +227,45 @@ const renderArticleModalWindow = (article) => {
   modal.renderModal();
 }
 
+// const generatePrices = (price) => {
+//   let articles = [];
+//   price.forEach(article => {
+//     articles.push(new Price(article))
+//   });
+ 
+//   return articles;
+// }
+// const renderPriceToDom = () => {
+//   let pricesWrapper = getPricesWrapper();
+//   generatePrices(price).forEach(article => {
+//     pricesWrapper.append(article.generatePrice());
+//   })
+//   addPriceClickHandler();
+// }
 
+// const getPricesWrapper = () => {
+//   const pricesContainer = document.querySelector('.price_wrapper');
+//   pricesContainer.innerHTML = '';
+//   return pricesContainer
+// }
 
-
-
-
+// const addPriceClickHandler = () => {
+//   document.querySelector('.price_wrapper').addEventListener('click', (e) => {
+//     if(e.target.closest('.price')) {
+//       let clickedPriceId = e.target.closest('.price').getAttribute('data-id');    
+//       let clickedPricePrice = getClickedPrice(clickedPriceId);
+//       renderPriceWindow(clickedPricePrice);
+//     }
+    
+//   })
+// }
+// const getClickedPrice = (id) => {
+//   return price.find(article => article.id == id)
+// }
+// const renderPriceWindow = (article) => {
+//   let modal = new Price('article-modal', article);
+//   modal.renderModal();
+// }
 
 
 
