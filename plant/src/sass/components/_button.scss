@@ -1,0 +1,96 @@
+button {
+    &:hover {
+        // background-color: #E06733;
+        // color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.button_bordered {
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 12px 28px 13px 21px;
+    @include font($size: 1rem, $height: 1.25rem, $weight: 400);   
+    color: #000000;
+    @include media-tablet {
+        padding: 12px 22px 8px 21px;
+    }
+}
+
+.button-promo {
+    padding: 11px 24px 12px 29px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    margin-bottom: 128px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+    @include media-tablet {
+        padding: 9px 21px 12px 25px;
+        margin-bottom: 93px;
+    }
+    @include media-mobile {
+        padding: 6px 13px;
+        border: 2px solid #E06733;
+        border-radius: 10px;
+        margin-bottom: 11px;
+        font-size: 14px;
+    }
+}
+.button-price {
+    display: flex;
+    // align-items: center;
+    gap: 54px;
+    background: #EDF2EC;
+    border-radius: 20px;
+    border: 1px solid #EDF2EC;
+    padding: 16px 56px 16px 33px;
+    @include font($size: 1.25rem, $height: 1.25rem);
+    color: #000000;
+    margin: 0;
+    margin-bottom: 7px;
+       
+    @include media-mobile {
+        width: 180px;
+        padding: 13px 12px 13px 27px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    &.opened {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 16px 40px 0 40px;
+        background: #D6E7D2;         
+}
+}
+
+.button-price__contact {  
+    padding: 12px 33px 12px 30px;
+    @extend %font-add;
+    @include font($size: 1.25rem, $height: 1.625rem);
+    text-align: center;
+    color: #E06733;
+    position: absolute;
+    right: 109px;
+    @include media-tablet {
+        padding: 10px 38px 11px 30px;
+        right: 105px;
+    }
+    @include media-mobile {
+        padding: 8px 25px 4px 23px;
+        right: 121px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+    }
+}

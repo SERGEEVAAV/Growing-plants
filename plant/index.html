@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plant</title>
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="src/sass/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -57,48 +57,49 @@
         <div class="stratigies__content">
             <h2 class="strategies__title">Service and our projects</h2>
             <div class="stratigies__tags tags">
-                <span class="tag tag__selected">Gargens</span>
+                <span class="tag tag__selected">All</span>
+                <span class="tag tag__bordered">Gargens</span>
                 <span class="tag tag__bordered">Lawn</span>
                 <span class="tag tag__bordered">Planting</span>
             </div> 
         </div>       
         <div class="layout-3-column strategy-wrapper">
-           <article class="strategy block-bordered">
+           <article class="strategy block-bordered" data-id="1">
             <img src="./img/cards/1.jpg" alt="cards-1" class="strategy__img">
             <div class="strategy__content">
                 <h4 class="strategy__name">Garden care</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
-           <article class="strategy block-bordered">
+           <article class="strategy block-bordered" data-id="2">
             <img src="./img/cards/2.jpg" alt="cards-2" class="strategy__img">
             <div class="strategy__content">
                 <h4 class="strategy__name">Planting</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
-           <article class="strategy block-bordered">
+           <article class="strategy block-bordered" data-id="3">
             <img src="./img/cards/3.jpg" alt="cards-3" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Lawn care</h4>
+                <h4 class="strategy__name">Lawn</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
-           <article class="strategy block-bordered">
+           <article class="strategy block-bordered" data-id="4">
             <img src="./img/cards/4.jpg" alt="cards-4" class="strategy__img">
             <div class="strategy__content">
                 <h4 class="strategy__name">Planting</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
-           <article class="strategy block-bordered">
+           <article class="strategy block-bordered" data-id="5">
             <img src="./img/cards/5.jpg" alt="cards-5" class="strategy__img">
             <div class="strategy__content">
-                <h4 class="strategy__name">Garden care</h4>
+                <h4 class="strategy__name">Gargens</h4>
                 <p class="strategy__description">Lorem Ipsum has been the industry</p>
             </div>
            </article>
-           <article class="strategy block-bordered">
+           <article class="strategy block-bordered" data-id="6">
             <img src="./img/cards/6.jpg" alt="cards-6" class="strategy__img">
             <div class="strategy__content">
                 <h4 class="strategy__name">Planting</h4>
@@ -112,18 +113,20 @@
     <div class="wrapper prices__wrapper">
         <div class="price-container">
             <div class="name_container">Prices</div>
-            <div class="price-container__buttons border_container">
-               <button class="button-price">Basics
+            <div class="price-container__buttons border_container price_wrapper">
+               <button class="prices button-price" data-id="1">
+                <div class="button-price__name">Basics
+                    <span class="ico-circle">
+                        <span class="ico ico_arrow"></span>
+                    </span>
+                </div>               
+               </button>
+               <button class="prices button-price" data-id="2">Standard
                 <span class="ico-circle">
                     <span class="ico ico_arrow"></span>
                 </span>
                </button>
-               <button class="button-price">Standard
-                <span class="ico-circle">
-                    <span class="ico ico_arrow"></span>
-                </span>
-               </button>
-               <button class="button-price">Pro care
+               <button class="prices button-price" data-id="3">Pro care
                 <span class="ico-circle">
                     <span class="ico ico_arrow"></span>
                 </span>
@@ -139,24 +142,32 @@
    </section>
    <section class="contact-us">
     <div class="wrapper contact-us__wrapper">
-        <!-- <div class="contact-us__content"> -->
             <img src="./img/contact-us/contact_woman.png" alt="contact_woman" class="contact-us__img">
             <div class="contact-us__content">
                 <h3 class="contact-us__title">Contact us</h3>
-                <div class="box">
                     <form>
-                      <select>
-                          <option>City</option>
-                          <option>Синий</option>
-                          <option>Розовый</option>
-                          <option>Чёрный</option>
-                          <option>Белый</option>
-                      </select>
+                        <div class="contact-us__select selected__wrapper" data-state="">
+                            <div class="contact-us__select__title">City</div>
+                            <div class="contact-us__select__content">
+                                <input id="singleSelect0" type="radio" class="contact-us__select__input" name="singleSelect"/>
+                                <label for="singleSelect0" class="contact-us__select__label">City</label>
+
+                                <input id="singleSelect1" type="radio" class="contact-us__select__input" name="singleSelect"/>
+                                <label for="singleSelect1" class="contact-us__select__label">Canandaigua, NY</label>
+
+                                <input id="singleSelect2" type="radio" class="contact-us__select__input" name="singleSelect" checked/>
+                                <label for="singleSelect2" class="contact-us__select__label">New York City</label>
+
+                                <input id="singleSelect3" type="radio" class="contact-us__select__input" name="singleSelect" checked/>
+                                <label for="singleSelect3" class="contact-us__select__label">Yonkers, NY</label>
+
+                                <input id="singleSelect4" type="radio" class="contact-us__select__input" name="singleSelect" checked/>
+                                <label for="singleSelect4" class="contact-us__select__label">Sherrill, NY</label>
+                            </div>
+                        </div>                    
                     </form>
-                </div>
             </div>
             
-        <!-- </div> -->
     </div>
    </section>
     <div class="footer">
@@ -174,7 +185,7 @@
         </div>
 
     </div>
-    <script src="./index.js"></script>
+    <script src="./dist/main.js"></script>
 </body>
 
 </html>
